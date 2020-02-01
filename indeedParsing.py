@@ -1,3 +1,6 @@
+# Adam Fernandes
+# Rough outline for scraping Indeed.
+
 import requests
 import webbrowser
 from bs4 import BeautifulSoup
