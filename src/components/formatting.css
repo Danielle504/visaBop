@@ -74,3 +74,16 @@
   height: 100vh;
   width: 80vw;
 }
+.btn{
+  text-align:center;
+  width: 20%;
+  border-Width: 1;
+  border-color: black;
+  border-style: solid;
+  margin-left: 40px;
+  color: white;
+  background-color: #010484;
+}
+.job{
+  margin-left: 20px;
+}

@@ -3,7 +3,6 @@ import swamp from '../images/swamp.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import './formatting.css';
 import Rectangle from 'react-rectangle';
-
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -71,7 +70,14 @@ class Main extends Component {
       'SQ',
       'SB'
     ],
-    selectedVisa: ''
+    jobs: ["Frontend Software Developer, Software Enterprises",
+      "Physical Therapist, MOS Therapy",
+      "Libaility Claims Representative, Gallagher",
+      "Underwriter, Gallagher",
+      "Lifecycle Project Specialist, Emmerson",
+      "Customer Service Representative, ClosetMaid"],
+    selectedVisa: '',
+    data: '',
   };
 
   showPosition = position => {
@@ -91,13 +97,12 @@ class Main extends Component {
       console.log('error getting position');
     }
   };
-
   visaList = this.state.visaList.sort();
   visaList = this.state.visaList.unshift('Enter visa');
   render() {
     return (
-      <div className="background">
-        <img src={swamp} className="swampLogo" />
+      < div className="background" >
+        <img src={swamp} className="swampLogo" onClick={this.about} />
         <Rectangle className="rect">
           <Rectangle className="invis">
             <h3 className="instructions" style={{ fontSize: 20 }}>
@@ -133,21 +138,31 @@ class Main extends Component {
             </label>
           </form>
         </Rectangle>
-        {/* Look into:
-          flexbox froggy
-
-        */}
-        {this.state.showComponent ? (
-          <Rectangle className="jobscreen">
-            <Rectangle className="joblist">
-              <div>{this.state.latitude}</div>
-              <div>{this.state.longitude}</div>
+        <div id="main">
+          {this.state.showComponent ? (
+            <Rectangle className="jobscreen" >
+              <Rectangle className="joblist">
+                {
+                  document.getElementById('main').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+                {this.state.jobs.map(job => (
+                  <div>
+                    <h1 className="job" key={job} value={job}>
+                      {job}
+                    </h1>
+                    <button className="btn">apply</button></div>
+                ))}
+              </Rectangle>
             </Rectangle>
-          </Rectangle>
-        ) : null}
-      </div>
+          ) : null}
+        </div>
+      </div >
     );
   }
 }
 
+/*
+Copyright Notice:
+  All rights reserved to Jacob Sage
+*/
 export default Main;
