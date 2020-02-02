@@ -1,0 +1,76 @@
+.background {
+  align-items: "center";
+  background-image: url("../images/bg.jpeg");
+  background-size: "cover";
+  height: 100vh;
+  width: 100%;
+}
+.visaSubmit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 100px;
+  margin-left: 100px;
+}
+.visaScroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 100px;
+  margin-left: -200px;
+}
+.distance {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  height: 30px;
+  width: 150px;
+  margin-left: -75px;
+}
+.rect {
+  position: absolute;
+  background-color: #cecece;
+  top: 26%;
+  left: 50%;
+  height: 250px;
+  width: 600px;
+  margin-left: -300px;
+}
+.instructions {
+  position: absolute;
+  text-align: "center";
+}
+.invis {
+  position: absolute;
+  top: 26%;
+  left: 50%;
+  height: 50px;
+  width: 400px;
+  margin-left: -180px;
+  margin-top: -10px;
+}
+.swampLogo {
+  position: absolute;
+  top: 3%;
+  left: 90%;
+  height: 50px;
+  width: 80px;
+}
+.jobscreen {
+  background-color: grey;
+  position: relative;
+  top: 70vh;
+  width: 100%;
+  padding-top: 0;
+}
+.joblist {
+  background-color: white;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  height: 100vh;
+  width: 80vw;
+}

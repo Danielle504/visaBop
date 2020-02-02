@@ -1,50 +1,46 @@
 {
-  "name": "node",
-  "version": "1.0.0",
-  "description": "Pretty sweet node project ",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "node build/main.js",
-    "build": "backpack build",
-    "dev": "backpack dev",
-    "test": "jest --passWithNoTests",
-    "lint": "eslint src --color",
-    "p": "prettier --write 'src/**/*.js'",
-    "p:w": "onchange 'src/**/*.js' -- prettier --write {{changed}}"
-  },
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "helmet": "^3.15.0",
-    "lumie": "^0.1.0",
-    "mongoose": "^5.4.1",
-    "morgan": "^1.9.1",
-    "winston": "^3.2.1"
+    "@react-pdf/renderer": "^1.6.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/react-native": "^0.60.31",
+    "bootstrap": "^4.4.1",
+    "flexbox": "0.0.3",
+    "flexbox-react": "^4.4.0",
+    "jquery": "^3.4.1",
+    "lottie-ios": "^3.1.3",
+    "lottie-react-native": "^3.3.2",
+    "popper.js": "^1.16.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.12.0",
+    "react-native-scalable-image": "^1.0.0",
+    "react-rectangle": "^1.3.3",
+    "react-scripts": "3.3.0",
+    "react-window-size": "^1.2.2"
   },
-  "devDependencies": {
-    "babel-jest": "^24.5.0",
-    "backpack-core": "^0.8.4",
-    "eslint": "^5.15.2",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.5.0",
-    "nodemon": "^2.0.2",
-    "onchange": "^5.2.0",
-    "parcel": "^1.12.4",
-    "prettier": "^1.19.1",
-    "prettier-webpack-plugin": "^1.2.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "_moduleAliases": {
-    "@root": "",
-    "@lib": "lib",
-    "@models": "api/db/models"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

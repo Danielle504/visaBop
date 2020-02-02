@@ -1,8 +1,4 @@
-import dotenv from 'dotenv';
-import api from './api';
-import log from '@lib/logger';
-
-const { PORT = 3000 } = process.env;
-dotenv.config({ silent: true });
-
-api.listen(PORT, log.info(`> Listening on ${PORT}`));
+import React from "react";
+import reactDom from "react-dom";
+import Main from "./components/main.jsx";
+reactDom.render(<Main />, document.getElementById("root"));
