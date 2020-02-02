@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import swamp from "../images/swamp.png";
-import "bootstrap/dist/css/bootstrap.css";
-import "./formatting.css";
-import Rectangle from "react-rectangle";
+import React, { Component } from 'react';
+import swamp from '../images/swamp.png';
+import 'bootstrap/dist/css/bootstrap.css';
+import './formatting.css';
+import Rectangle from 'react-rectangle';
 
 class Main extends Component {
   constructor(props) {
@@ -20,58 +20,58 @@ class Main extends Component {
     latitude: 0,
     longitude: 0,
     showComponent: false,
-    Name: "",
+    Name: '',
     distance: 0,
     visaList: [
-      "B1",
-      "B2",
-      "F1",
-      "F2",
-      "M1",
-      "J1",
-      "Q",
-      "H1B",
-      "H1B1",
-      "H2A",
-      "H2B",
-      "H3",
-      "L1",
-      "O1",
-      "O2",
-      "O3",
-      "P",
-      "TN",
-      "TD",
-      "E3",
-      "I",
-      "E1",
-      "E2",
-      "A1",
-      "A2",
-      "T",
-      "U",
-      "C",
-      "D",
-      "F2A",
-      "F2B",
-      "IR2",
-      "IR5",
-      "F3",
-      "F4",
-      "IR3",
-      "IH3",
-      "IR4",
-      "IH4",
-      "K3",
-      "IR1",
-      "CR1",
-      "EB1",
-      "EB5",
-      "SI",
-      "SQ",
-      "SB"
+      'B1',
+      'B2',
+      'F1',
+      'F2',
+      'M1',
+      'J1',
+      'Q',
+      'H1B',
+      'H1B1',
+      'H2A',
+      'H2B',
+      'H3',
+      'L1',
+      'O1',
+      'O2',
+      'O3',
+      'P',
+      'TN',
+      'TD',
+      'E3',
+      'I',
+      'E1',
+      'E2',
+      'A1',
+      'A2',
+      'T',
+      'U',
+      'C',
+      'D',
+      'F2A',
+      'F2B',
+      'IR2',
+      'IR5',
+      'F3',
+      'F4',
+      'IR3',
+      'IH3',
+      'IR4',
+      'IH4',
+      'K3',
+      'IR1',
+      'CR1',
+      'EB1',
+      'EB5',
+      'SI',
+      'SQ',
+      'SB'
     ],
-    selectedVisa: ""
+    selectedVisa: ''
   };
 
   showPosition = position => {
@@ -88,12 +88,12 @@ class Main extends Component {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(this.showPosition);
     } else {
-      console.log("error getting position");
+      console.log('error getting position');
     }
   };
 
   visaList = this.state.visaList.sort();
-  visaList = this.state.visaList.unshift("Enter visa");
+  visaList = this.state.visaList.unshift('Enter visa');
   render() {
     return (
       <div className="background">
