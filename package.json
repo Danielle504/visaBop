@@ -8,7 +8,7 @@
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "@types/react-native": "^0.60.31",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "eslint-config-standard": "^14.1.0",
     "firebase": "^7.8.0",
